@@ -31,11 +31,15 @@
             max-width: 100%;
             height: auto;
         }
+		table, th, td {
+               border:1px solid black;
+               border-collapse: collapse;
+            }
     </style>
 </head>
 <body>
 
-    <h1>HTML Assignment #3</h1>
+    <h>HTML Assignment #3</h>
 
     <!-- Table 1 -->
     <table  id="table-1" border="1">
@@ -50,9 +54,9 @@
             <td class="center">right</td>
         </tr>
         <tr>
-            <td>left</td>
-            <td>center</td>
-            <td class="center right">right</td>
+            <td style="width:10%">left</td>
+            <td style="width:10%">center</td>
+            <td style="width:10%"class="center right">right</td>
         </tr>
     </table>
 <br>
@@ -62,30 +66,47 @@
             <td id="t21" colspan="6">Row 1, Spanning 6 Columns</td>
         </tr>
         <tr>
-            <td>Row 2, Column 1</td>
-            <td>Row 2, Column 2</td>
-            <td>Row 2, Column 3</td>
-            <td>Row 2, Column 4</td>
-            <td>Row 2, Column 5</td>
-            <td>Row 2, Column 6</td>
+            <td style="width:10%"rowspan="4"></td>
+            <td style="width:10%">1</td>
+            <td style="width:10%">2</td>
+			<td style="width:10%">3</td>
+			<td style="width:10%">4</td>
+			<td style="width:10%">5</td>
         </tr>
-        <!-- Add more rows as needed -->
+		<tr>
+			<td style="width:10%">1</td>
+		    <td style="width:10%"colspan="3">2</td>
+			<td style="width:10%">6</td>
+		</tr>
+		<tr>
+			<td style="width:10%">6</td>
+		    <td style="width:10%" colspan="3"></td>
+			<td>8</td>
+		</tr>
+		<tr>
+			<td style="width:10%">6</td>
+			<td style="width:10%">6</td>
+			<td style="width:10%"></td>
+			<td style="width:10%"></td>
+			<td style="width:10%"></td>
+		</tr>
+		<tr>
+			<td style="width:10%" colspan="6">22</td>
+		</tr>
     </table>
 <br>
     <!-- Table 3 -->
     <table class="middle" id="table-3" border="1">
         <tr class="green">
-            <td>Green Row 1</td>
-            <td>Green Row 2</td>
-            <td>Green Row 3</td>
+            <td style="width:10%" colspan="6">Green Row 1</td>
+            
         </tr>
         <tr id="t-image">
             <td colspan="3"><img src="your_image_url.jpg" alt="Image"></td>
         </tr>
         <tr class="blue">
-            <td>Blue Row 1</td>
-            <td>Blue Row 2</td>
-            <td>Blue Row 3</td>
+            <td style="width:10%"colspan="6">Blue Row 1</td>
+            
         </tr>
     </table>
 
